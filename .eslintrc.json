@@ -1,3 +1,12 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "generator-star-spacing": "off",
+    "object-curly-spacing": "off",
+    "space-in-parens": ["off", "always"],
+    "space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
+    "indent": "off",
+    "semi": ["error", "always", { "omitLastInOneLineBlock": true }]
+  }
 }
